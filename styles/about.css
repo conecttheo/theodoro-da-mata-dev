@@ -1,0 +1,28 @@
+.btn__padrao {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--branco);
+    background-color: var(--cor-secundaria);
+    padding: 10px 30px;
+    border: solid var(--cor-secundaria) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 22px;
+    transition : 270ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+    
+.btn__padrao:hover { 
+    transition : 270ms;
+    padding: 10px 24px;
+    border: solid var(--cor-secundaria) 2px;
+}
+
+.img-perfil:hover {
+    transition : 470ms;
+    transform: scale(1.1);
+}

@@ -1,0 +1,16 @@
+.carta-habilidade {
+    width: 75%;
+    padding: 20px;
+    background-color: var(--cor-cards);
+    border-top-left-radius: 25%;
+    border-right: 5px solid var(--cor-secundaria);
+}
+
+.carta-habilidade:hover {
+    transition: 370ms;
+    transform: scale(1.2);
+}
+
+.icone-dev {
+    font-size: 50px;
+}

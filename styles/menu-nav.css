@@ -1,0 +1,35 @@
+.navegador {
+    background-color: var(--cor-de-fundo);
+    border-bottom: solid 2px var(--cor-secundaria);
+}
+
+.btn__menu {
+    color: var(--cor-secundaria);
+    padding: 4px 8px;
+}
+
+.btn__menu:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    border-radius: 100%;
+}
+
+.titulo__menu {
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.link__menu {
+    color: var(--branco);
+}
+
+.link__menu:hover {
+    color: var(--cor-secundaria);
+    transition : 200ms;
+    
+}
+
+.topico__menu:hover {
+    transition : 470ms;
+    transform: scale(1.2);
+}

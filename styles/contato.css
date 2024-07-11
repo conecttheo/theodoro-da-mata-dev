@@ -1,0 +1,15 @@
+.botoes__ancora-contato {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.botoes__ancora-contato:hover {
+    transition: 649ms;
+    scale: 1.2;
+}
+
+.icone-contatos {
+    color: var(--cor-secundaria);
+    padding: 1.65rem 2rem;
+    border-radius: 100%;
+}

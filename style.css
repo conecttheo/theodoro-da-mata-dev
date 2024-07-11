@@ -1,0 +1,143 @@
+@import url("/styles/about.css");
+@import url("styles/menu-nav.css");
+@import url("styles/contato.css");
+@import url("styles/habilidades.css");
+@import url("styles/responsivo.css");
+
+:root {
+    --cor-de-fundo: #13131f;
+    --cor-secundaria: #8257e6;
+    --cor-terciaria: #7f8082;
+    --cor-cards: #212121;
+    --branco: #ffffff;
+    --preto: #000000;
+}
+
+main {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+}
+
+strong {
+    color: var(--cor-secundaria);
+}
+
+.imgem__projetos {
+    display: block;
+    filter: brightness(50%);
+    transition: filter 0.5s;
+    scale: 1.2;
+    border-bottom: 5px solid var(--cor-secundaria);
+}
+
+.imgem__projetos:hover {
+    filter: brightness(100%);
+}
+
+.cartao__cover {
+    padding: 10px 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+}
+
+.subtitulo {
+    border-bottom: 4px solid #8257e6;
+}
+
+.cartao__cover:hover {
+    transition: 649ms;
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.cartao__cover .ver-mais {
+    position: relative;
+    top: -70px;
+    /* Inicialmente escondido */
+    left: 0;
+    width: 100%;
+    color: var(--cor-secundaria);
+    text-align: center;
+    transition: all .5s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.cartao__cover:hover .ver-mais {
+    top: 0;
+    /* Aparece ao passar o mouse */
+}
+
+.cartao__cover:hover button {
+    color: var(--preto)
+}
+
+button {
+    background: linear-gradient(90deg, #8201a9 0%, #8257e6 100%);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-img-text {
+    position: relative;
+    display: inline-block;
+
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--branco);
+    font-size: 1.5rem;
+    padding: 10px 2px;
+    border-radius: 5px;
+    text-align: center;
+    filter: brightness(100%);
+}
+
+.container-img-text:hover .texto-sobre-imagem {
+    display: none;
+}
+
+.titulo__modal {
+    color: var(--cor-secundaria);
+}
+
+.btn__modal {
+    color: var(--branco);
+    border-radius: 8px;
+}
+
+.btn__modal:hover {
+    transition: 370ms;
+    color: var(--cor-de-fundo);
+}
+
+[data-bs-theme="dark"] {
+    color: white;
+
+    main {
+        background-color: white;
+
+        #apresentacao,
+        #about,
+        #projetos,
+        #contatos,
+        .titulo,
+        .contato {
+            color: var(--cor-de-fundo);
+
+            .icone-contatos {
+                color: var(--branco);
+            }
+        }
+    }
+
+}
